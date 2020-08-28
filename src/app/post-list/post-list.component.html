@@ -1,0 +1,6 @@
+<div *ngFor="let post of posts">
+  <a [href]="post.data.url" target="_blank">
+    <p>{{post.data.title}}</p>
+    <img [src]="post.data.thumbnail" />
+  </a>
+</div>

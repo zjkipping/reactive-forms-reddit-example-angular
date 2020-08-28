@@ -1,0 +1,6 @@
+<form [formGroup]="searchForm">
+  <label for="query">Search Reddit</label>
+  <input id="query" type="text" formControlName="query">
+</form>
+
+<app-post-list [posts]="results | async"></app-post-list>
